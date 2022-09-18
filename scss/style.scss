@@ -1,0 +1,105 @@
+.row {
+    display: flex;
+    min-height: 100vh;
+}
+
+.aside {
+    padding: 36px 28px 76px 28px;
+    flex: 0 0 21.25%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 54px 0px;
+    }
+
+    &__logo {
+        margin: 0px 8px 0px 0px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 26px;
+        & > span {
+            display: inline-block;
+            margin: 0px 2px 0px 0px;
+            font-size: 10px;
+            color: #838383;
+        }
+    }
+
+    &__body {
+        flex: 1 1 auto;
+    }
+
+    &__navigation {
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__list > li {
+        display: flex;
+        align-items: center;
+        padding: 11px;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    &__list > li.active {
+        background-color: #5932EA;
+    }
+
+    &__list > li.active > .aside__link {
+        color: #fff;
+    }
+
+    &__list > li:not(:first-child) {
+        &::after{
+            content:url('../img/aside/arrow-right.svg');
+            position: absolute;
+            top: 18px;
+            right: 14px;
+        }
+    }
+
+    &__list > li:not(:last-child) {
+        margin: 0px 0px 18px 0px;
+    }
+
+    &__link-img {
+        margin: 0px 14px 0px 0px;
+    }
+
+    &__link {
+        color: #9197B3;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        max-width: 42px;
+        max-height: 42px;
+        margin: 0px 12px 0px 0px;
+    }
+
+    &__user-info {
+        & > * {
+            line-height: 150%;
+        }
+    }
+
+    &__name {
+        letter-spacing: 0.2px;      
+    }
+
+    &__position {
+        font-size: 12px;
+        list-style: none;
+        color: #757575;
+    }
+}

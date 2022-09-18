@@ -1,0 +1,125 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.aside {
+  padding: 36px 28px 76px 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 21.25%;
+          flex: 0 0 21.25%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aside__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 54px 0px;
+}
+
+.aside__logo {
+  margin: 0px 8px 0px 0px;
+}
+
+.aside__title {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.aside__title > span {
+  display: inline-block;
+  margin: 0px 2px 0px 0px;
+  font-size: 10px;
+  color: #838383;
+}
+
+.aside__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.aside__navigation {
+  margin: 0px 0px 20px 0px;
+}
+
+.aside__list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.aside__list > li.active {
+  background-color: #5932EA;
+}
+
+.aside__list > li.active > .aside__link {
+  color: #fff;
+}
+
+.aside__list > li:not(:first-child)::after {
+  content: url("../img/aside/arrow-right.svg");
+  position: absolute;
+  top: 18px;
+  right: 14px;
+}
+
+.aside__list > li:not(:last-child) {
+  margin: 0px 0px 18px 0px;
+}
+
+.aside__link-img {
+  margin: 0px 14px 0px 0px;
+}
+
+.aside__link {
+  color: #9197B3;
+}
+
+.aside__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside__avatar {
+  max-width: 42px;
+  max-height: 42px;
+  margin: 0px 12px 0px 0px;
+}
+
+.aside__user-info > * {
+  line-height: 150%;
+}
+
+.aside__name {
+  letter-spacing: 0.2px;
+}
+
+.aside__position {
+  font-size: 12px;
+  list-style: none;
+  color: #757575;
+}
