@@ -66,6 +66,12 @@
   padding: 11px;
   border-radius: 8px;
   position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.aside__list > li:hover {
+  background-color: #8362fd;
 }
 
 .aside__list > li.active {
@@ -93,6 +99,11 @@
 
 .aside__link {
   color: #9197B3;
+  cursor: pointer;
+}
+
+.aside__link:hover {
+  text-decoration: underline;
 }
 
 .aside__bottom {
@@ -122,4 +133,188 @@
   font-size: 12px;
   list-style: none;
   color: #757575;
+}
+
+.main {
+  padding: 41px 96px 0px 72px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #FAFBFF;
+}
+
+.main__title {
+  line-height: 150%;
+  font-size: 24px;
+  margin: 0px 0px 52px 0px;
+}
+
+.main__body {
+  padding: 28px 0px 42px 0px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0px 0px 200px 0px;
+}
+
+.main__top {
+  padding: 0px 54px 0px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 42px 0px;
+}
+
+.main__content-info > * {
+  line-height: 150%;
+}
+
+.main__choosen-element {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0px 0px 7px 0px;
+}
+
+.main__members {
+  font-weight: 400;
+  color: #16C098;
+}
+
+.main__input {
+  max-width: 216px;
+  position: relative;
+}
+
+.main__input::before {
+  content: url("../img/main/search.svg");
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.main__input > input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 40px;
+  background-color: #F9FBFF;
+  border-radius: 10px;
+  color: #B5B7C0;
+  font-size: 12px;
+  line-height: 150%;
+  min-height: 38px;
+}
+
+.main__input > input::-webkit-input-placeholder {
+  color: #B5B7C0;
+}
+
+.main__input > input:-ms-input-placeholder {
+  color: #B5B7C0;
+}
+
+.main__input > input::-ms-input-placeholder {
+  color: #B5B7C0;
+}
+
+.main__input > input::placeholder {
+  color: #B5B7C0;
+}
+
+.main__list {
+  margin: 0px 0px 28px 0px;
+}
+
+.main__user-info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: minmax(80px, 167px) minmax(60px, 126px) minmax(60px, 151px) minmax(50px, 202px) minmax(40px, 125px) minmax(60px, 80px);
+      grid-template-columns: minmax(80px, 167px) minmax(60px, 126px) minmax(60px, 151px) minmax(50px, 202px) minmax(40px, 125px) minmax(60px, 80px);
+  padding: 20px 0px;
+  margin: 0px 44px 0px 36px;
+  position: relative;
+}
+
+.main__user-info::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+
+.main__user-info > * {
+  color: #292D32;
+  line-height: 150%;
+  overflow: hidden;
+}
+
+.main__user-info-headline {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 44px 14px 36px;
+}
+
+.main__user-info-headline > * {
+  color: #B5B7C0;
+}
+
+.main__status {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+
+.main__status.active {
+  padding: 2px 18px;
+  color: #008767;
+  border: 1px solid #00B087;
+  background-color: rgba(22, 192, 152, 0.38);
+}
+
+.main__status.inactive {
+  padding: 3px 12px;
+  color: #DF0404;
+  border: 1px solid #DF0404;
+  background-color: #ffc5c5;
+}
+
+.main__bottom {
+  padding: 0px 40px 0px 38px;
+}
+
+.main__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__pagination-info {
+  line-height: 150%;
+  color: #B5B7C0;
 }
